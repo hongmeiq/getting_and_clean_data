@@ -15,6 +15,7 @@ run_analysis.R performs the following transformation to the /UCI HAR Dataset dat
   * Relabel the numeric activity values to the descriptive activity names
     * activity names are available in the activity_labels.txt second column
   * Subset the merged data sets to extract variables to do with mean and standard deviation
+    * reason to pick the subset: pick any column contains keyword "mean" or "std"
   * Create a final dataset with the average of each variable for each activity and each subject, save it as output.txt
 
 ### How to run run_analysis.R
@@ -28,3 +29,5 @@ run_analysis.R performs the following transformation to the /UCI HAR Dataset dat
 ### output.txt
 This file contains the following file headers:
 "subject","activity","tbodyaccmeanx","tbodyaccmeany","tbodyaccmeanz","tbodyaccstdx","tbodyaccstdy","tbodyaccstdz","tgravityaccmeanx","tgravityaccmeany","tgravityaccmeanz","tgravityaccstdx","tgravityaccstdy","tgravityaccstdz","tbodyaccjerkmeanx","tbodyaccjerkmeany","tbodyaccjerkmeanz","tbodyaccjerkstdx","tbodyaccjerkstdy","tbodyaccjerkstdz","tbodygyromeanx","tbodygyromeany","tbodygyromeanz","tbodygyrostdx","tbodygyrostdy","tbodygyrostdz","tbodygyrojerkmeanx","tbodygyrojerkmeany","tbodygyrojerkmeanz","tbodygyrojerkstdx","tbodygyrojerkstdy","tbodygyrojerkstdz","tbodyaccmagmean","tbodyaccmagstd","tgravityaccmagmean","tgravityaccmagstd","tbodyaccjerkmagmean","tbodyaccjerkmagstd","tbodygyromagmean","tbodygyromagstd","tbodygyrojerkmagmean","tbodygyrojerkmagstd","fbodyaccmeanx","fbodyaccmeany","fbodyaccmeanz","fbodyaccstdx","fbodyaccstdy","fbodyaccstdz","fbodyaccmeanfreqx","fbodyaccmeanfreqy","fbodyaccmeanfreqz","fbodyaccjerkmeanx","fbodyaccjerkmeany","fbodyaccjerkmeanz","fbodyaccjerkstdx","fbodyaccjerkstdy","fbodyaccjerkstdz","fbodyaccjerkmeanfreqx","fbodyaccjerkmeanfreqy","fbodyaccjerkmeanfreqz","fbodygyromeanx","fbodygyromeany","fbodygyromeanz","fbodygyrostdx","fbodygyrostdy","fbodygyrostdz","fbodygyromeanfreqx","fbodygyromeanfreqy","fbodygyromeanfreqz","fbodyaccmagmean","fbodyaccmagstd","fbodyaccmagmeanfreq","fbodybodyaccjerkmagmean","fbodybodyaccjerkmagstd","fbodybodyaccjerkmagmeanfreq","fbodybodygyromagmean","fbodybodygyromagstd","fbodybodygyromagmeanfreq","fbodybodygyrojerkmagmean","fbodybodygyrojerkmagstd","fbodybodygyrojerkmagmeanfreq"
+
+More details of each varialble are available in the CodeBook.md
